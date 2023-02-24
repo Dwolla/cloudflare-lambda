@@ -27,12 +27,12 @@ provider:
            - logs:CreateLogStream
            - logs:CreateLogGroup
           Resource:
-           - "arn:aws:logs:${env:ACCOUNT}:log-group:/aws/lambda/cloudflare-lambda-Function-*:*"
+           - "arn:aws:logs:${AWS::Region}:${env:ACCOUNT}:log-group:/aws/lambda/cloudflare-lambda-Function-*:*"
         - Effect: Allow
           Action:
            - logs:PutLogEvents
           Resource:
-           - "arn:aws:logs:${env:ACCOUNT}:log-group:/aws/lambda/cloudflare-lambda-Function-*:*:*"
+           - "arn:aws:logs:${AWS::Region}:${env:ACCOUNT}:log-group:/aws/lambda/cloudflare-lambda-Function-*:*:*"
   logRetentionInDays: 7
   stackTags:
     Creator: serverless
