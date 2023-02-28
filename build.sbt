@@ -58,7 +58,7 @@ lazy val root = (project in file("."))
         "org.specs2" %% "specs2-mock" % specs2Version % Test,
         "org.specs2" %% "specs2-matcher-extra" % specs2Version % Test,
         "org.specs2" %% "specs2-cats" % specs2Version % Test,
-        "org.typelevel" %% "cats-effect-testing-specs2" % "1.4.0" % Test,
+        "org.typelevel" %% "cats-effect-testing-specs2" % "1.5.0" % Test,
         "org.typelevel" %% "discipline-specs2" % "1.3.1" % Test,
         "org.typelevel" %% "cats-laws" % "2.7.0" % Test,
       )
