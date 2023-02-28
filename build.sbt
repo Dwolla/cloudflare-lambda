@@ -35,7 +35,7 @@ lazy val root = (project in file("."))
       val natchezVersion = "0.1.6"
       val feralVersion = "0.1.0-M9"
       val specs2Version = "4.15.0"
-      val awsJavaSdkVersion = "2.17.129"
+      val awsJavaSdkVersion = "2.17.295"
 
       Seq(
         "org.typelevel" %% "feral-lambda-cloudformation-custom-resource" % feralVersion,
